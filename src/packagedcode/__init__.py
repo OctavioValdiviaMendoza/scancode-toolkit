@@ -44,6 +44,7 @@ from packagedcode import windows
 if on_linux:
     from packagedcode import msi
     from packagedcode import win_reg
+    from packagedcode.lkm import LinuxKernelModuleHandler
 
 # Note: the order matters: from the most to the least specific parser.
 # a handler classes MUST be added to this list to be active
